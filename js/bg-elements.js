@@ -1,4 +1,5 @@
-const elements = document.querySelectorAll('.set-bg');
+const elements = () => {
+    const elements = document.querySelectorAll('.set-bg');
 
 for (let i = 0; i < elements.length; i++) {
 
@@ -7,3 +8,6 @@ for (let i = 0; i < elements.length; i++) {
     elements[i].style.backgroundImage = `url(${src})`;
 
 }
+}
+
+elements();
